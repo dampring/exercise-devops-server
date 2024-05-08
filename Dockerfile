@@ -1,7 +1,7 @@
 FROM node:14.21.3-bullseye
 # set environment
 ARG DEBIAN_FRONTEND=noninteractive
-ARG CORS="http://localhost:3000,http://localhost:8080"
+ARG CORS="http://localhost:3000,http://localhost:8080,http://localhost:5000"
 ENV CORS_ALLOWLIST=${CORS_ALLOWLIST:-$CORS}
 # set working directory
 WORKDIR /app
